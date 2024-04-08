@@ -28,18 +28,20 @@ const NewsFeed = () => {
         fetchData();
     }, [])
 
-    const first7News = news ? news.slice(0, 7) : []
-    console.log(first7News)
-    return <div className="bg-red-500">
-        <h1>News Feed</h1>
-        {first7News.map((newsItem, index) => {
-            return (
-                <div key={index}>
-                    <a href={newsItem.URL}><h2>{newsItem.Title}</h2> </a>
-                </div>
-            )
-        })}
-    </div>
+    const first5News = news ? news.slice(0, 5) : []
+    console.log(first5News)
+    return <div className="flex flex-col justify-start px-7">
+        <div className="text-3xl font-bold pt-5"> News Feed</div >
+        {
+            first5News.map((newsItem, index) => {
+                return (
+                    <div className="mt-3 pt-4" key={index}>
+                        <a href={newsItem.URL} target="_blank"><div className="font-semibold text-sm text-prpl">{newsItem.Title}</div> </a>
+                    </div>
+                )
+            })
+        }
+    </div >
 }
 
 export default NewsFeed

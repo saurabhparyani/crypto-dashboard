@@ -60,7 +60,7 @@ const CurrencyConverter = () => {
 
 
     return <div className="flex flex-col items-center px-9 h-fit">
-        <div className="text-3xl font-bold mt-5 mb-3">Currency Converter</div>
+        <div className="text-3xl font-bold mt-6 mb-4">Currency Converter</div>
         <div className="bg-linkwater px-5 w-fit h-fit rounded drop-shadow-xl shadow-inner">
             <table className="mt-9 table-auto">
                 <tbody>

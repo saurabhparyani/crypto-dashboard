@@ -17,8 +17,9 @@ export default {
       colors: {
         'beige': '#e8dccc',
         'linkwater': '#Dbe5f4',
-        'idk': '#e0dcec',
-        'badgreen': '#d1dad1'
+        'idk': '#c5c7e4',
+        'badgreen': '#d1dad1',
+        'prpl': '#2563eb'
         // Add as many custom colors as you need
       },
     },
